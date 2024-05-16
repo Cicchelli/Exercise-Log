@@ -1,5 +1,3 @@
-from .manipulador_de_log import ManipuladorDeLog
-
 class LogEmArquivo():
     @classmethod
     def log(cls, message):
