@@ -1,2 +1,7 @@
+from .manipulador_de_log import ManipuladorDeLog
+
 class LogEmArquivo():
-    pass
+    @classmethod
+    def log(cls, message):
+        with open('data/log.txt', 'a') as file:
+            print(message, file=file)
